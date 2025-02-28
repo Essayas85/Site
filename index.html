@@ -3,15 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Site avec Mode Sombre</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Mon Site Web</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Bienvenue sur mon site !</h1>
-    <p id="message">Cliquez sur le bouton pour voir la magie !</p>
-    <button onclick="changerTexte()">Cliquez-moi</button>
-    <button onclick="toggleDarkMode()">🌙 Mode Sombre</button>
-
-    <script src="script.js"></script>
+    <header>
+        <h1>Bienvenue sur mon site</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#mon-histoire">Mon Histoire</a></li>
+            <li><a href="#galerie">Galerie</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#blog">Blog</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="accueil">
+            <h2>Accueil</h2>
+            <p>Bienvenue sur mon site web personnel.</p>
+        </section>
+        <section id="mon-histoire">
+            <h2>Mon Histoire</h2>
+            <p>Voici mon histoire...</p>
+            <div class="dropdown">
+                <button class="dropbtn">Choisissez une section</button>
+                <div class="dropdown-content">
+                    <a href="#enfance">Enfance en Éthiopie</a>
+                    <a href="#arrivee">Arrivée en France</a>
+                    <a href="#carriere">Carrière de footballeur</a>
+                </div>
+            </div>
+            <article id="enfance">
+                <h3>Enfance en Éthiopie</h3>
+                <p>Je suis né en Éthiopie le 6 juin 1985. J'ai grandi et étudié en Éthiopie jusqu'à l'âge de 14 ans. J'ai encore des amis d'enfance et je retourne régulièrement pour les voir ainsi que ma famille.</p>
+            </article>
+            <article id="arrivee">
+                <h3>Arrivée en France</h3>
+                <p>J'ai quitté l'Éthiopie pour la France à l'âge de 14 ans. Au début, c'était vraiment difficile à cause du choc culturel et de la langue. Il fallait tout recommencer à zéro. Ce qui m'a aidé, c'est le football. Cela m'a permis de rencontrer des gens incroyables et de grandir en tant qu'homme.</p>
+            </article>
+            <article id="carriere">
+                <h3>Carrière de footballeur</h3>
+                <p>À 15 ans, j'avais un très bon niveau et j'ai été surclassé pour jouer avec les seniors en Promotion Honneur à Chamberet. J'y suis resté 3 ans et j'ai été plusieurs fois meilleur buteur du club. Après mon succès, plusieurs équipes ont essayé de me recruter. Finalement, j'ai opté pour une équipe -19 nationaux à Limoges Foot. Nous avons joué contre des futurs pros comme Paris Saint-Germain, Bordeaux, Toulouse, Nantes, Lyon, et bien d'autres.</p>
+            </article>
+        </section>
+        <section id="galerie">
+            <h2>Galerie</h2>
+            <p>Photos et vidéos.</p>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Contactez-moi.</p>
+        </section>
+        <section id="blog">
+            <h2>Blog</h2>
+            <p>Mes articles de blog.</p>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 Mon Site Web</p>
+    </footer>
+    <script src="scripts.js"></script>
 </body>
 </html>
