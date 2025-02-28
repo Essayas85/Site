@@ -1,22 +1,40 @@
 <link rel="stylesheet" href="style.css">
+/* Fond avec une image */
 body {
-   font-family: Arial, sans-serif;
-   text-align: center;
-   background-color: #f4f4f4;
-   margin-top: 50px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-image: url('https://source.unsplash.com/1600x900/?nature,sky');
+    background-size: cover;
+    background-position: center;
+    margin-top: 50px;
+    color: #333;
 }
-h1 {
-   color: #333;
-}
+
+/* Style des boutons */
 button {
-   background-color: #007bff;
-   color: white;
-   border: none;
-   padding: 10px 20px;
-   font-size: 1.2rem;
-   cursor: pointer;
-   margin-top: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin: 10px;
 }
+
 button:hover {
-   background-color: #0056b3;
+    background-color: #0056b3;
+}
+
+/* Mode sombre */
+.dark-mode {
+    background-color: #222 !important;
+    color: white !important;
+}
+
+.dark-mode button {
+    background-color: #ff9800;
+}
+
+.dark-mode button:hover {
+    background-color: #e68900;
 }
