@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url('path/to/your/image.jpg');
+    background: linear-gradient(to bottom, green, yellow, red);
     background-size: cover;
     background-position: center;
 }
@@ -19,10 +19,12 @@ nav ul {
     padding: 0;
     background-color: #444;
     overflow: hidden;
+    display: flex;
+    justify-content: space-around;
 }
 
 nav ul li {
-    float: left;
+    flex: 1;
 }
 
 nav ul li a {
@@ -31,6 +33,26 @@ nav ul li a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+}
+
+nav ul li:nth-child(1) a {
+    background-color: #4CAF50; /* Vert */
+}
+
+nav ul li:nth-child(2) a {
+    background-color: #FFEB3B; /* Jaune */
+}
+
+nav ul li:nth-child(3) a {
+    background-color: #F44336; /* Rouge */
+}
+
+nav ul li:nth-child(4) a {
+    background-color: #2196F3; /* Bleu */
+}
+
+nav ul li:nth-child(5) a {
+    background-color: #9C27B0; /* Violet */
 }
 
 nav ul li a:hover {
@@ -87,7 +109,6 @@ footer {
 /* Styles pour les petits écrans */
 @media (max-width: 600px) {
     nav ul {
-        display: flex;
         flex-direction: column;
     }
 
@@ -104,3 +125,4 @@ footer {
         padding: 1em;
     }
 }
+
