@@ -1,7 +1,2 @@
-function changerTexte() {
-    document.getElementById("message").innerText = "Bravo ! Vous avez cliqué sur le bouton ! 🎉";
-}
-
-function toggleDarkMode() {
-    document.body.classList.toggle("dark-mode");
-}
+// Vous pouvez ajouter des scripts JavaScript ici
+console.log("Bienvenue sur mon site web !");
