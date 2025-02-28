@@ -2,8 +2,9 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url('https://github.com/Essayas85/Site/blob/main/2025-02-28%2013_38_15-Drapeau%20Rasta%20d'%C3%89thiopie%20_%20Rasta-Lion%E2%84%A2%20_%20Magasin%20Rasta%20en%20Ligne.png');
+    background-image: url('path/to/your/image.jpg');
     background-size: cover;
+    background-position: center;
 }
 
 header {
@@ -81,4 +82,25 @@ footer {
 
 .dropdown:hover .dropbtn {
     background-color: #3e8e41;
+}
+
+/* Styles pour les petits écrans */
+@media (max-width: 600px) {
+    nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav ul li {
+        float: none;
+    }
+
+    nav ul li a {
+        padding: 10px;
+    }
+
+    footer {
+        position: static;
+        padding: 1em;
+    }
 }
